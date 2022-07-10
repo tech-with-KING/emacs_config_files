@@ -69,7 +69,8 @@
 (scroll-bar-mode -1)
 (setq c-default-style "bsd"
       c-basic-offset 8
-      tabs-width 8)
+      tab-width 8
+      indent-tabs-mode t)
 ;;disable creation of backup files
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
