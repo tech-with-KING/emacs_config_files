@@ -1,6 +1,7 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (use-package all-the-icons)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 (use-package all-the-icons-dired
   :hook (dired-mode . all-the-icons-dired-mode))
 (add-to-list 'package-archives
